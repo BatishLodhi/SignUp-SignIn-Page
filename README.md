@@ -1,7 +1,7 @@
 # SignUp-SignIn-Page
 A SignUp/SignIn Page I made using only HTML and CSS with a hint of JS 
 
-## 👦 𝙰𝚋𝚘𝚞𝚝 𝙼𝚎
+## 📌 Usage
 - Recommended to start from the LFront.html.
 - Navigate to the signup or signin page using the provided buttons.
 - Fill out the required fields and submit the form (details entered inside the form won't go anywhere).
