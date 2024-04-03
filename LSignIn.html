@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="light.css">
+        <title>Sign In</title>
+    </head>
+    <body>
+        <div class="head">
+            <img  class="logo" src="assets/logo.png" alt="logo">
+            <div class="underhead">
+                <a href="LSignIn.html"><button class="mode"><img src="assets/Lsun.png" alt="light.png" height="30vh">Light</button></a>
+                <a href="DSignIn.html"><button class="mode"><img src="assets/Lmoon.png" alt="dark.png" height="30vh">Dark</button></a>
+            </div>
+        </div>
+        <form ></form>
+        <form action="https://i.imgflip.com/7fz8b3.jpg">
+            <div class="block">
+                <h1>Log In</h1>
+                <div class="input">
+                    <label class="label">Username</label>
+                    <input type="text" class="IP" placeholder="Username"required>
+                </div>
+                <div class="input" style = "margin-left: 0.5vw;">
+                    <label class="label">Password</label>
+                    <input type="password" id="password" name="password" class="IP" placeholder="Password"required>
+                </div>
+                <div class="input">
+                    <input type="checkbox" class="check">
+                    <label class="label">Remember Me</label>
+                    <a href="https://images.squarespace-cdn.com/content/v1/5104992de4b0c3c708362173/1527104749276-KBU21ZLRVNJ9F0OKENBZ/COVER.jpg" style = "margin-left: 2vw;" class="label">Forgot Password?</a>
+                </div>
+                <button class="login_btn">Log In</button>
+                <h3 class="label">Don't have an Account? <a href="LSignUp.html" class="label">Create Account</a></h3>
+            </div>
+        </form>
+        <script>
+            function validatePassword() {
+                var password = document.getElementById("password").value;
+                var confirmPassword = document.getElementById("confirmPassword").value;
+                var confirmPasswordInput = document.getElementById("confirmPassword");
+                if (password !== confirmPassword) {
+                    confirmPasswordInput.setCustomValidity("Passwords do not match");
+                } else {
+                    confirmPasswordInput.setCustomValidity("");
+                }
+            }
+            document.getElementById("password").addEventListener("change", validatePassword);
+            document.getElementById("confirmPassword").addEventListener("keyup", validatePassword);
+        </script>        
+    </body>
+</html>
